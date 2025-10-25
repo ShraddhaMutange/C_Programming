@@ -8,29 +8,23 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
-//  Author          : Shraddha Dhananjay Mutange
-//  Date            : 25/10/2025
+//  Function Name   :   RectArea
+//  Description     :   It is used to calculate the area of the rectangle
+//  Input           :   Float
+//  Output          :   Double
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+double RectArea(float fWidth, float fHeight)
 {
-    int iCnt = 0;
+    double dArea = 0.0;
 
-    if(iNo < 0)
-    {
-        iNo = -iNo;
-    }
+    dArea = fWidth * fHeight;
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return dArea;
+} // End of RectArea
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -40,12 +34,19 @@ void Pattern(int iNo)
 
 int main()
 {
-    int iValue = 0;
+    float fValue1 = 0.0;
+    float fValue2 = 0.0;
+    double dRet = 0.0;
 
-    printf("Enter number : ");
-    scanf("%d", &iValue);
+    printf("Enter width : ");
+    scanf("%f", &fValue1);
 
-    Pattern(iValue);
+    printf("Enter height : ");
+    scanf("%f", &fValue2);
+
+    dRet = RectArea(fValue1, fValue2);
+
+    printf("Area of Rectangle is : %lf\n", dRet);
 
     return 0;
 }
@@ -54,8 +55,6 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input   :   5.3     9.78        Output  : Area of Rectangle is : 51.834000
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

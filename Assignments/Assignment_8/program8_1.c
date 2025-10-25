@@ -8,29 +8,33 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
-//  Author          : Shraddha Dhananjay Mutange
-//  Date            : 25/10/2025
+//  Function Name   :   Number
+//  Description     :   It is used to accept number from user and if number is 
+//                      less than 50 then print small, if it is greater than 50
+//                      and less than 100 then print medium, if it is greater
+//                      than 100 then print large.
+//  Input           :   Int
+//  Output          :   Void
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+void Number(int iNo)
 {
-    int iCnt = 0;
-
-    if(iNo < 0)
+    if(iNo <= 50)
     {
-        iNo = -iNo;
+        printf("Small");
     }
-
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    else if(iNo > 50 && iNo < 100)
     {
-        printf("$\t*\t");
+        printf("Medium");
     }
-} // End of Pattern
+    else
+    {
+        printf("Large");
+    }
+} // End of Number
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -45,7 +49,7 @@ int main()
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    Number(iValue);
 
     return 0;
 }
@@ -54,8 +58,9 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 45      Output  : Small
+//  Input : 50      Output  : Small
+//  Input : 75      Output  : Medium
+//  Input : 105     Output  : Large
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

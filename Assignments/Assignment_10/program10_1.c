@@ -8,29 +8,24 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
-//  Author          : Shraddha Dhananjay Mutange
-//  Date            : 25/10/2025
+//  Function Name   :   CircleArea
+//  Description     :   It is used to calculate the area of the circle
+//  Input           :   Float
+//  Output          :   Double
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+double CircleArea(float fRadius)
 {
-    int iCnt = 0;
+    float fPI = 3.14;
+    double dArea = 0.0;
 
-    if(iNo < 0)
-    {
-        iNo = -iNo;
-    }
+    dArea = fPI * fRadius * fRadius;
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return dArea;
+} // End of CircleArea
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -40,12 +35,15 @@ void Pattern(int iNo)
 
 int main()
 {
-    int iValue = 0;
+    float fValue = 0.0;
+    double dRet = 0.0;
 
-    printf("Enter number : ");
-    scanf("%d", &iValue);
+    printf("Enter radius : ");
+    scanf("%f", &fValue);
 
-    Pattern(iValue);
+    dRet = CircleArea(fValue);
+
+    printf("Area of circle is : %lf\n", dRet);
 
     return 0;
 }
@@ -54,8 +52,7 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5.3         Output  : Area of circle is : 88.202609
+//  Input : 10.4        Output  : Area of circle is : 339.622386
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

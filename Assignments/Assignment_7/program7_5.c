@@ -8,8 +8,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : MultipleDisplay
+//  Description     : It is used to accept N and print first 5 multiples of N
 //  Input           : Int
 //  Output          : Void
 //  Author          : Shraddha Dhananjay Mutange
@@ -17,7 +17,7 @@
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+void MultipleDisplay(int iNo)
 {
     int iCnt = 0;
 
@@ -26,11 +26,11 @@ void Pattern(int iNo)
         iNo = -iNo;
     }
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    for(iCnt = 1; iCnt <= 5; iCnt++)
     {
-        printf("$\t*\t");
+        printf("%d\t", iNo*iCnt);
     }
-} // End of Pattern
+} // End of MultipleDisplay
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -45,7 +45,7 @@ int main()
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    MultipleDisplay(iValue);
 
     return 0;
 }
@@ -54,8 +54,10 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5       Output  : 5       10      15      20      25
+//  Input : 4       Output  : 4       8       12      16      20
+//  Input : 7       Output  : 7       14      21      28      35
+//  Input : -4      Output  : 4       8       12      16      20
+//  Input : 0       Output  : 0       0       0       0       0
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

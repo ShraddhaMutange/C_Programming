@@ -8,29 +8,24 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : KmToMeter
+//  Description     : It is used to accept distance in km and convert it into meter.
 //  Input           : Int
-//  Output          : Void
+//  Output          : Int
 //  Author          : Shraddha Dhananjay Mutange
 //  Date            : 25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+int KmToMeter(int iNo)
 {
-    int iCnt = 0;
-
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return (iNo*1000);
+} // End of KmToMeter
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -41,11 +36,14 @@ void Pattern(int iNo)
 int main()
 {
     int iValue = 0;
+    int iRet = 0;
 
-    printf("Enter number : ");
+    printf("Enter distance : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    iRet = KmToMeter(iValue);
+
+    printf("%d km = %d m", iValue, iRet);
 
     return 0;
 }
@@ -54,8 +52,7 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5           Output  : 5 km = 5000 m
+//  Input : 12          Output  : 12 km = 12000 m
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

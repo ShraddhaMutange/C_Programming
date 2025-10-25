@@ -8,29 +8,24 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : DollarToINR
+//  Description     : It is used to accept amount in US Dollar and return its corresponding value in Indian currency.
 //  Input           : Int
-//  Output          : Void
+//  Output          : Int
 //  Author          : Shraddha Dhananjay Mutange
 //  Date            : 25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+int DollarToINR(int iNo)
 {
-    int iCnt = 0;
-
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return (iNo*70);
+} // End of DollarToINR
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -41,11 +36,14 @@ void Pattern(int iNo)
 int main()
 {
     int iValue = 0;
+    int iRet = 0;
 
-    printf("Enter number : ");
+    printf("Enter amount in  US Dollar : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    iRet = DollarToINR(iValue);
+
+    printf("%d", iRet);
 
     return 0;
 }
@@ -54,8 +52,8 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 10          Output  : 700
+//  Input : 3           Output  : 210
+//  Input : 1200        Output  : 84000
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

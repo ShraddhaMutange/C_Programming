@@ -8,29 +8,32 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
-//  Author          : Shraddha Dhananjay Mutange
-//  Date            : 25/10/2025
+//  Function Name   :   Factorial
+//  Description     :   It is used to find factorial of given number
+//  Input           :   Int
+//  Output          :   Int
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+int Factorial(int iNo)
 {
     int iCnt = 0;
+    int iFact = 1;
 
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    for(iCnt = iNo; iCnt >= 1; iCnt--)
     {
-        printf("$\t*\t");
+        iFact = iFact * iCnt;
     }
-} // End of Pattern
+
+    return iFact;
+} // End of Factorial
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -41,11 +44,14 @@ void Pattern(int iNo)
 int main()
 {
     int iValue = 0;
+    int iRet = 0;
 
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    iRet = Factorial(iValue);
+
+    printf("Factorial is : %d\n", iRet);
 
     return 0;
 }
@@ -54,8 +60,8 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5       Output  : Factorial is : 120
+//  Input : -5      Output  : Factorial is : 120
+//  Input : 4       Output  : Factorial is : 24
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

@@ -8,8 +8,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : PatternDisplay
+//  Description     : It is used to accept number from user and print that number of * & # on screen
 //  Input           : Int
 //  Output          : Void
 //  Author          : Shraddha Dhananjay Mutange
@@ -17,7 +17,7 @@
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+void PatternDisplay(int iNo)
 {
     int iCnt = 0;
 
@@ -28,9 +28,14 @@ void Pattern(int iNo)
 
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        printf("$\t*\t");
+        printf("*\t");
     }
-} // End of Pattern
+
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        printf("#\t");
+    }
+} // End of PatternDisplay
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -45,7 +50,7 @@ int main()
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    PatternDisplay(iValue);
 
     return 0;
 }
@@ -54,8 +59,9 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5       Output  : *       *       *       *       *       #       #       #       #       #
+//  Input : -5      Output  : *       *       *       *       *       #       #       #       #       #
+//  Input : 6       Output  : *       *       *       *       *       *       #       #       #       #       #       #
+//  Input : 2       Output  : *       *       #       #
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

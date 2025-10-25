@@ -8,29 +8,23 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
+//  Function Name   : FahrenheitToCelsius
+//  Description     : It is used to accept temperature in Fahrenheit and convert it into celsius.
+//  Input           : Float
+//  Output          : Double
 //  Author          : Shraddha Dhananjay Mutange
 //  Date            : 25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+double FahrenheitToCelsius(float fTempFht)
 {
-    int iCnt = 0;
+    double dTempCs = 0.0;
 
-    if(iNo < 0)
-    {
-        iNo = -iNo;
-    }
+    dTempCs = ((fTempFht - 32) * ((double)5/9));
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return dTempCs;
+} // End of FahrenheitToCelsius
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -40,12 +34,15 @@ void Pattern(int iNo)
 
 int main()
 {
-    int iValue = 0;
+    float fValue = 0.0;
+    double dRet = 0.0;
+    
+    printf("Enter temperature in Fahrenheit : ");
+    scanf("%f", &fValue);
 
-    printf("Enter number : ");
-    scanf("%d", &iValue);
+    dRet = FahrenheitToCelsius(fValue);
 
-    Pattern(iValue);
+    printf("%f F = %lf C", fValue, dRet);
 
     return 0;
 }
@@ -54,8 +51,7 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 10          Output  : 10.000000 F = -12.222222 C
+//  Input : 34          Output  : 34.000000 F = 1.111111 C
 // 
-///////////////////////////////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////////////////////////////////

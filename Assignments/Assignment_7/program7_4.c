@@ -8,8 +8,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : OddDisplay
+//  Description     : It is used to accept number from user and print all odd numbers till that number
 //  Input           : Int
 //  Output          : Void
 //  Author          : Shraddha Dhananjay Mutange
@@ -17,7 +17,7 @@
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+void OddDisplay(int iNo)
 {
     int iCnt = 0;
 
@@ -28,9 +28,12 @@ void Pattern(int iNo)
 
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        printf("$\t*\t");
+        if((iCnt % 2) != 0)
+        {
+            printf("%d\t", iCnt);
+        }
     }
-} // End of Pattern
+} // End of OddDisplay
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -45,7 +48,7 @@ int main()
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    OddDisplay(iValue);
 
     return 0;
 }
@@ -54,8 +57,8 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5       Output  : 1       2       3       4       5
+//  Input : -5      Output  : 1       2       3       4       5
+//  Input : 8       Output  : 1       2       3       4       5       6       7       8
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

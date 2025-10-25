@@ -8,29 +8,23 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
+//  Function Name   : SqFeetToSqMeter
+//  Description     : It is used to accept area in sq feet and convert it into sq meter
 //  Input           : Int
-//  Output          : Void
+//  Output          : Double
 //  Author          : Shraddha Dhananjay Mutange
 //  Date            : 25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+double SqFeetToSqMeter(int iSquareFeet)
 {
-    int iCnt = 0;
+    double dSquareMeter = 0.0;
 
-    if(iNo < 0)
-    {
-        iNo = -iNo;
-    }
+    dSquareMeter = (0.0929 * iSquareFeet);
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
-    {
-        printf("$\t*\t");
-    }
-} // End of Pattern
+    return dSquareMeter;
+} // End of SqFeetToSqMeter
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -41,11 +35,14 @@ void Pattern(int iNo)
 int main()
 {
     int iValue = 0;
+    double dRet = 0.0;
 
-    printf("Enter number : ");
+    printf("Enter area in square feet : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    dRet = SqFeetToSqMeter(iValue);
+
+    printf("Area in square feet : %lf", dRet);
 
     return 0;
 }
@@ -54,8 +51,7 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5           Output  : Area in square feet : 0.464500
+//  Input : 7           Output  : Area in square feet : 0.650300
 // 
 ///////////////////////////////////////////////////////////////////////////////// 

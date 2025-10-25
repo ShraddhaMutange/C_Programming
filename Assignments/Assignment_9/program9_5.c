@@ -8,29 +8,44 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Function Name   : Pattern
-//  Description     : It is used to accept number from user and print that number of $ & * on screen
-//  Input           : Int
-//  Output          : Void
-//  Author          : Shraddha Dhananjay Mutange
-//  Date            : 25/10/2025
+//  Function Name   :   FactorialDiff
+//  Description     :   It returns difference between even factorial and odd factorial of given number.
+//  Input           :   Int
+//  Output          :   Int
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   25/10/2025
 //  
 /////////////////////////////////////////////////////////////////////////////////
 
-void Pattern(int iNo)
+int FactorialDiff(int iNo)
 {
     int iCnt = 0;
+    int iEvenFact = 1;
+    int iOddFact = 1;
 
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    for(iCnt = iNo; iCnt >= 1; iCnt--)
     {
-        printf("$\t*\t");
+        if(iCnt % 2 == 0)
+        {
+            iEvenFact = iEvenFact * iCnt;
+        }
     }
-} // End of Pattern
+
+    for(iCnt = iNo; iCnt >= 1; iCnt--)
+    {
+        if(iCnt % 2 != 0)
+        {
+            iOddFact = iOddFact * iCnt;
+        }
+    }
+
+    return (iEvenFact-iOddFact);
+} // End of FactorialDiff
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
@@ -41,11 +56,14 @@ void Pattern(int iNo)
 int main()
 {
     int iValue = 0;
+    int iRet = 0;
 
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Pattern(iValue);
+    iRet = FactorialDiff(iValue);
+
+    printf("Even-Odd Factorial Difference is : %d\n", iRet);
 
     return 0;
 }
@@ -54,8 +72,8 @@ int main()
 // 
 //  Testcases handled succrsfully by the application
 // 
-//  Input : 5       Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : -5      Output  : $       *       $       *       $       *       $       *       $       *
-//  Input : 0       Output  : 
+//  Input : 5       Output  : Factorial is : -7
+//  Input : -5      Output  : Factorial is : -7
+//  Input : 10      Output  : Factorial is : 2895
 // 
 ///////////////////////////////////////////////////////////////////////////////// 
