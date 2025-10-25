@@ -1,0 +1,64 @@
+//////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Required header files
+// 
+//////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+//////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name   : DisplayEvenFactor
+//  Description     : It accepts the number from user and prints even factors of that number
+//  Input           : Int
+//  Output          : Void
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 24/10/2025
+// 
+//////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayEvenFactor(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo <= 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1; iCnt <= iNo/2; iCnt++)
+    {
+        if(((iNo % iCnt) == 0) && ((iCnt % 2) == 0))        // Business logic
+        {
+            printf("%d\t", iCnt);
+        }
+    }
+} // End of DisplayEvenFactor
+
+//////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Entry point function of the application
+// 
+//////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number : ");
+    scanf("%d", &iValue);
+
+    DisplayEvenFactor(iValue);
+
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Testcases handled succesfully by the application
+// 
+//  Input : 36      Output : 2       4       6       12      18
+//  Input : -28     Output : 2       4       14
+//  Input : 18      Output : 2       6
+//
+//////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,61 @@
+/////////////////////////////////////////////////////////////////////////
+// 
+//  Required header files
+// 
+/////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+/////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name : Divide
+//  Description :   It is used to perform division
+//  Input :         int, int
+//  Output :        int
+//  Author :        Shraddha Dhananjay Mutange
+//  Date :          18/10/2025
+// 
+/////////////////////////////////////////////////////////////////////////
+
+int Divide(
+                int iNo1,                   // First input
+                int iNo2                    // Second input
+            )
+{
+    int iAns = 0;
+
+    if(iNo2 == 0)
+    {
+        return -1;
+    }
+
+    iAns = iNo1 / iNo2;
+
+    return iAns;
+} // End of Divide
+
+/////////////////////////////////////////////////////////////////////////
+// 
+//  Entry point function for the application
+// 
+/////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue1 = 15, iValue2 = 5;
+    int iRet = 0;                               // To store the result
+
+    iRet = Divide(iValue1, iValue2);
+
+    printf("Division is %d", iRet);
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// 
+//  Testcases succesfully handled by the application
+// 
+//  Input : 15  5      Output : Division is 3
+// 
+/////////////////////////////////////////////////////////////////////////////////
