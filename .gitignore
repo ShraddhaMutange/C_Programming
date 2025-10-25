@@ -1,1 +1,32 @@
-*.exe 
+# Windows / OneDrive / system files
+Thumbs.db
+Desktop.ini
+*.lnk
+~$*
+*.tmp
+
+# Visual Studio / editors
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts / object files / executables
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+
+# Debug / release folders
+/bin/
+/build/
+/dist/
+
+# Temp files
+*.log
+*.class
+*.pyc
