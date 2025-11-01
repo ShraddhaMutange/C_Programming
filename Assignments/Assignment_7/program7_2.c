@@ -32,6 +32,8 @@ void Display(int iNo)
     }
 } // End of Display
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

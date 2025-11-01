@@ -26,6 +26,8 @@ double RectArea(float fWidth, float fHeight)
     return dArea;
 } // End of RectArea
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

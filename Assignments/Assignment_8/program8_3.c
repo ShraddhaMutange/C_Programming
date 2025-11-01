@@ -35,6 +35,8 @@ int Factorial(int iNo)
     return iFact;
 } // End of Factorial
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

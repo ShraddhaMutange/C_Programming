@@ -30,6 +30,8 @@ bool CheckEqual(int iNo1, int iNo2)
     }
 } // End of CheckEqual
 
+//  Time complexity :   O(1)
+
 ///////////////////////////////////////////////////////////////////////////////////
 //
 //  Entry point function for the application

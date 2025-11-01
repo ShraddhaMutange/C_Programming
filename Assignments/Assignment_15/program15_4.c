@@ -38,6 +38,8 @@ int MultDigits(int iNo)
     return iMult;
 } // End of MultDigits
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

@@ -37,6 +37,8 @@ int CountFour(int iNo)
     return iCount;
 } // End of CountFour
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

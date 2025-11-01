@@ -38,6 +38,8 @@ int EvenFactorial(int iNo)
     return iFact;
 } // End of EvenFactorial
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

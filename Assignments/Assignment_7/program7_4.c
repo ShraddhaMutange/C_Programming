@@ -35,6 +35,8 @@ void OddDisplay(int iNo)
     }
 } // End of OddDisplay
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

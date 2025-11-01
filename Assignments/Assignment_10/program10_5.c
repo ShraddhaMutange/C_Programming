@@ -26,6 +26,8 @@ double SqFeetToSqMeter(int iSquareFeet)
     return dSquareMeter;
 } // End of SqFeetToSqMeter
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

@@ -37,6 +37,8 @@ void PatternDisplay(int iNo)
     }
 } // End of PatternDisplay
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

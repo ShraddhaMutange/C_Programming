@@ -30,6 +30,8 @@ bool CheckDivisibleBy5(int iNo)
     }
 } // End of CheckDivisibleBy5
 
+//  Time complexity :   O(1)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

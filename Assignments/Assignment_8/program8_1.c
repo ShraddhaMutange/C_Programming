@@ -36,6 +36,8 @@ void Number(int iNo)
     }
 } // End of Number
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

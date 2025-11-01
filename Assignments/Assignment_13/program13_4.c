@@ -35,6 +35,8 @@ int SumNaturalNumbers(int iNo)
     return iSum;
 } // End of SumNaturalNumbers
 
+//  Time complexity :   O(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

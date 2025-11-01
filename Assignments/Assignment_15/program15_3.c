@@ -37,6 +37,8 @@ int CountRange(int iNo)
     return iCount;
 } // End of CountRange
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

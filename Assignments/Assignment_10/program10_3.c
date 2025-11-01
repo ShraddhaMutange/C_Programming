@@ -27,6 +27,8 @@ int KmToMeter(int iNo)
     return (iNo*1000);
 } // End of KmToMeter
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

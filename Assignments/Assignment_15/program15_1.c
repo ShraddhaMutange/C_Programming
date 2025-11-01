@@ -37,6 +37,8 @@ int CountEvenDigits(int iNo)
     return iCount;
 } // End of CountEvenDigits
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

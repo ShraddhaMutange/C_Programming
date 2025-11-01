@@ -37,6 +37,8 @@ int CountOddDigits(int iNo)
     return iCount;
 } // End of CountOddDigits
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

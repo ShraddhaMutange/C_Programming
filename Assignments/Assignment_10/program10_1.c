@@ -27,6 +27,8 @@ double CircleArea(float fRadius)
     return dArea;
 } // End of CircleArea
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

@@ -30,6 +30,8 @@ bool CheckGreater(int iNo)
     }
 } // End of CheckGreater
 
+//  Time complexity :   O(1)
+
 ///////////////////////////////////////////////////////////////////////////////////
 //
 //  Entry point function for the application

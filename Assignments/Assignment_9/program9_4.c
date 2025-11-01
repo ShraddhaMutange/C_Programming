@@ -38,6 +38,8 @@ int OddFactorial(int iNo)
     return iFact;
 } // End of OddFactorial
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

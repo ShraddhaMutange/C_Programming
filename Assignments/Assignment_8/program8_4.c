@@ -32,6 +32,8 @@ void Table(int iNo)
     }
 } // End of Table
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

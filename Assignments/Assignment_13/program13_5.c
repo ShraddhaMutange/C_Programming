@@ -38,6 +38,8 @@ int SumEvenNaturalNumbers(int iNo)
     return iSum;
 } // End of SumEvenNaturalNumbers
 
+//  Time complexity :   O(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

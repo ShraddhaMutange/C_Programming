@@ -47,6 +47,8 @@ int CountDiff(int iNo)
     return iDiff;
 } // End of CountDiff
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

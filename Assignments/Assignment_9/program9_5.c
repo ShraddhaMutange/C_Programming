@@ -47,6 +47,8 @@ int FactorialDiff(int iNo)
     return (iEvenFact-iOddFact);
 } // End of FactorialDiff
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

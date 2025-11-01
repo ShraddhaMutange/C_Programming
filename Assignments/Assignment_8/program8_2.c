@@ -70,6 +70,8 @@ void SingleDigitDisplay(int iNo)
     }
 } // End of SingleDigitDisplay
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

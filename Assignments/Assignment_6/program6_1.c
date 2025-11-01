@@ -22,6 +22,8 @@ void DisplayName(char cName[30])
     printf("Your name is %s", cName);
 } // End of DisplayName
 
+//  Time complexity :   O(1)
+
 ///////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

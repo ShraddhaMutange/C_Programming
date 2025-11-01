@@ -32,6 +32,8 @@ void TableReverse(int iNo)
     }
 } // End of TableReverse
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

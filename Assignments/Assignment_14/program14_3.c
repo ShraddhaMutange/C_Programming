@@ -37,6 +37,8 @@ int CountTwo(int iNo)
     return iCount;
 } // End of CountTwo
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

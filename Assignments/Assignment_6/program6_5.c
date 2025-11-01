@@ -32,6 +32,8 @@ float Percentage(int iTotal, int iObtained)
     return fPerc;    
 } // End of Percentage
 
+//  Time complexity :   O(1)
+
 ///////////////////////////////////////////////////////////////////////////////////
 //
 //  Entry point function for the application

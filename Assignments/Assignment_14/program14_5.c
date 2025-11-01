@@ -37,6 +37,8 @@ int CountLessSix(int iNo)
     return iCount;
 } // End of CountLessSix
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

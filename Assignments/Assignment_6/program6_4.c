@@ -44,6 +44,8 @@ int Multiply(int iNo1, int iNo2, int iNo3)
     return iMult;
 } // End of Multiply
 
+//  Time complexity :   O(1)
+
 ///////////////////////////////////////////////////////////////////////////////////
 //
 //  Entry point function for the application

@@ -34,6 +34,8 @@ void DisplayDigit(int iNo)
     }
 } // End of DisplayDigit
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

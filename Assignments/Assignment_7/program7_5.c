@@ -32,6 +32,8 @@ void MultipleDisplay(int iNo)
     }
 } // End of MultipleDisplay
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

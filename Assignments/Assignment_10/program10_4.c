@@ -26,6 +26,8 @@ double FahrenheitToCelsius(float fTempFht)
     return dTempCs;
 } // End of FahrenheitToCelsius
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

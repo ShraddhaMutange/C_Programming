@@ -32,6 +32,8 @@ void Pattern(int iNo)
     }
 } // End of Pattern
 
+//  Time complexity :   O(N)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

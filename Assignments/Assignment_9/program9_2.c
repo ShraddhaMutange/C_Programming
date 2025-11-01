@@ -27,6 +27,8 @@ int DollarToINR(int iNo)
     return (iNo*70);
 } // End of DollarToINR
 
+//  Time complexity :   O(1)
+
 /////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application

@@ -41,6 +41,8 @@ BOOL CheckZero(int iNo)
     return FALSE;
 } // End of CheckZero
 
+//  Time complexity :   log(N)
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
 //  Entry point function for the application
