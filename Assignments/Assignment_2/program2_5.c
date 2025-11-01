@@ -67,7 +67,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases succesfully handled by the application
+//  Testcases successfully handled by the application
 // 
 //  Input : 12      Output : 12 is even.
 //  Input : -6      Output : -6 is even.

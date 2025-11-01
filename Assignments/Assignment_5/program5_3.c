@@ -65,7 +65,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 2024        Output : 2024 is a leap year.
 //  Input : 2025        Output : 2025 is not a leap year.

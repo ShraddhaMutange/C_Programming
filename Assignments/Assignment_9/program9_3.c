@@ -61,7 +61,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succrsfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 5       Output  : Factorial is : 8
 //  Input : -5      Output  : Factorial is : 8

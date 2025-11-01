@@ -50,7 +50,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases succesfully handled by the application
+//  Testcases successfully handled by the application
 // 
 //  Input : 5       Output : Hello
 //  Input : -5      Output : Hello

@@ -65,7 +65,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 //  
 //  Input : a       Output : It is Vowel
 //  Input : A       Output : It is Vowel

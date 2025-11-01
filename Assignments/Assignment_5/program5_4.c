@@ -53,7 +53,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 55      Output : Positive number
 //  Input : -21     Output : Negative number

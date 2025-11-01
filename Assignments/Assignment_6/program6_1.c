@@ -42,7 +42,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the aaplication
+//  Testcases handled successfully by the aaplication
 // 
 //  Input   : Shraddha Mutange      Output  : Shraddha Mutange
 // 

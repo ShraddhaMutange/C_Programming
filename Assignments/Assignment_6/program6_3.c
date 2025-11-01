@@ -61,7 +61,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input   : 100   100         Output : Equal
 //  Input   : 500   100         Output : Not equal

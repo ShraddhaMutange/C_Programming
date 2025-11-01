@@ -60,7 +60,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases succesfully handled by the application
+//  Testcases successfully handled by the application
 // 
 //  Input : 5       Output : Divisible by 5
 //  Input : 11      Output : Not divisible by 5

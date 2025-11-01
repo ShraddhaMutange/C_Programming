@@ -65,7 +65,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 12      Output : 12 is even
 //  Input : -11     Output : -11 is odd

@@ -58,7 +58,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 12    30        Output : Maximum is : 30
 //  Input : 89    89        Output : Both are equal

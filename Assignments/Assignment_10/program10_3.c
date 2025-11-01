@@ -50,7 +50,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succrsfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 5           Output  : 5 km = 5000 m
 //  Input : 12          Output  : 12 km = 12000 m

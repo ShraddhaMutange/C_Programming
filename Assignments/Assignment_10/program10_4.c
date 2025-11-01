@@ -49,7 +49,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succrsfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 10          Output  : 10.000000 F = -12.222222 C
 //  Input : 34          Output  : 34.000000 F = 1.111111 C

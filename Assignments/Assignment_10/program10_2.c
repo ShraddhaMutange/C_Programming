@@ -53,7 +53,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succrsfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input   :   5.3     9.78        Output  : Area of Rectangle is : 51.834000
 // 

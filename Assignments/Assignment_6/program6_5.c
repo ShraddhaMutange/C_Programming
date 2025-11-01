@@ -59,7 +59,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input   : 1000  745         Output : Percentage is : 74.500000%
 //  Input   : 0     745         Output : Invalid total marks    Percentage is : 0.000000%

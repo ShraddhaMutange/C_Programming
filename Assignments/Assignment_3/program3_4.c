@@ -49,7 +49,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 //  
 //  Input : a       Output : A
 //  Input : A       Output : a

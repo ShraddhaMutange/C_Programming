@@ -55,7 +55,7 @@ int main()
 
 //////////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 36      Output : 2       4       6       12      18
 //  Input : -28     Output : 2       4       14

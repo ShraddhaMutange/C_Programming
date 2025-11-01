@@ -65,7 +65,7 @@ int main()
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succesfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input   : 15    5   25          Output : Maximum is : 25
 //  Input   : -89   0   10          Output : Maximum is : 10

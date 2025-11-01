@@ -50,7 +50,7 @@ int main()
 
 /////////////////////////////////////////////////////////////////////////////////
 // 
-//  Testcases handled succrsfully by the application
+//  Testcases handled successfully by the application
 // 
 //  Input : 5.3         Output  : Area of circle is : 88.202609
 //  Input : 10.4        Output  : Area of circle is : 339.622386
