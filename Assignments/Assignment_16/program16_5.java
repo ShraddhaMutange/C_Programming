@@ -1,0 +1,75 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Required header files
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+import java.util.Scanner;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name   :   CountDigits
+//  Description     :   It is used to count digits of given number
+//  Input           :   Int
+//  Output          :   Int
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   01/11/2025
+//  
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Logic
+{
+    int CountDigits(int iNo)
+    {
+        int iCount = 0;
+
+        if(iNo < 0)
+        {
+            iNo = -iNo;
+        }
+
+        while(iNo != 0)
+        {
+            iCount++;
+            iNo = iNo / 10;
+        }
+
+        return iCount;
+    } // End of CountDigits
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Entry point function for the application
+// 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class program16_5
+{
+    public static void main(String[] args) {
+        int iValue = 0;
+        int iRet = 0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        Logic obj = new Logic();
+
+        System.out.println("Enter number : ");
+        iValue = scanner.nextInt();
+
+        iRet = obj.CountDigits(iValue);
+        System.out.println("Number of digits : " + iRet);
+
+
+        scanner.close();
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Testcases handled successfully by the application
+// 
+//  Input   :   12345       Output  :   5
+//  Input   :   -2358       Output  :   4
+// 
+////////////////////////////////////////////////////////////////////////////////////////////////// 
