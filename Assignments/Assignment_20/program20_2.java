@@ -1,0 +1,65 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Required header files
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+package Assignments.Assignment_20;   
+import java.util.Scanner;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name   :   PrintReverse
+//  Description     :   It is used to print N down to 1 (reverse)
+//  Input           :   Int
+//  Output          :   Void
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   02/11/2025
+//  
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Logic
+{
+    void PrintReverse(int iNo)
+    {
+        int iCnt = 0;
+
+        for(iCnt = iNo; iCnt >= 1; iCnt--)
+        {
+            System.out.print(iCnt + "\t");
+        }
+
+    } // End of PrintReverse
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Entry point function for the application
+// 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+class program20_2
+{
+    public static void main(String[] args) {
+        int iValue = 0;
+
+        Scanner scanner = new Scanner(System.in);
+        Logic obj = new Logic();
+
+        System.out.println("Enter number : ");
+        iValue = scanner.nextInt();
+
+        obj.PrintReverse(iValue);
+
+        scanner.close();        
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Testcases handled successfully by the application
+// 
+//  Input   :   10      Output  :   10      9       8       7       6       5       4       3       2       1
+//  Input   :   5       Output  :   5       4       3       2       1
+// 
+////////////////////////////////////////////////////////////////////////////////////////////////// 
