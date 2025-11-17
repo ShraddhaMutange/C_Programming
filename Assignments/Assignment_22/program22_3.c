@@ -60,6 +60,7 @@ int main()
     if(NULL == iPtr)
     {
         printf("Unable to allocate the memory\n");
+        return -1;
     }
 
     printf("Enter the elements : \n");
