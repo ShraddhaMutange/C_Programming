@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   : Toggle
+//  Description     : It accepts a character from the user. If char is small display its corresponding capital character, and if it is capital display its corresponding small char. In other cases display as it is.
+//  Input           : Char
+//  Output          : Char
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 28/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+char Toggle(char ch)
+{
+    if (ch >= 'a' && ch <= 'z')
+    {
+        ch = ch - 32;
+    }
+    else if (ch >= 'A' && ch <= 'Z')
+    {
+        ch = ch + 32;
+    }
+
+    return ch;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char ch = '\0';
+    char cRet = '\0';
+
+    printf("Enter a character : \n");
+    scanf("%c", &ch);
+
+    cRet = Toggle(ch);
+    printf("%c\n", cRet);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//  
+//  Testcases handled succesfully by the application
+// 
+//  Input   :   a       Output  :   A
+//  Input   :   G       Output  :   g
+//  Input   :   4       Output  :   4
+//  Input   :   $       Output  :   $
+// 
+///////////////////////////////////////////////////////////////////////////////////////

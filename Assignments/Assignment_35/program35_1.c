@@ -1,0 +1,65 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   : CheckSmall
+//  Description     : It accepts a string from user and counts the number of capital characters
+//  Input           : Char
+//  Output          : Int
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 28/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int CountCapital(char str[])
+{
+    int iCount = 0;
+
+    while(*str != '\0')
+    {
+        if((*str >= 'A') && (*str <= 'Z'))
+        {
+            iCount++;
+        }
+        str++;
+    }
+
+    return iCount;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[50] = {'\0'};
+    int iRet = 0;
+
+    printf("Enter the string : \n");
+    scanf("%[^'\n']s", Arr);
+
+    iRet = CountCapital(Arr);
+
+    printf("Number of capital letters is : %d\n", iRet);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled succesfully by the application
+//
+//  Input   :   INdia Is mY coUNTry         Output  :   7
+//  Input   :   shraddha                    Output  :   0
+//  Input   :   SHRADDHA                    Output  :   8
+//
+///////////////////////////////////////////////////////////////////////////////////////

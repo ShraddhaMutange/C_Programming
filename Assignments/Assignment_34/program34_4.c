@@ -1,0 +1,68 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+#include <stdbool.h>
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   : CheckSpecial
+//  Description     : It accepts a character from the user and checks if it is special symbol or not. (!,@,#,$,%,^,&,*)
+//  Input           : Char
+//  Output          : Bool
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 28/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+bool CheckSpecial(char ch)
+{
+    bool bFlag = false;
+
+    if (ch == '!' || ch == '@' || ch == '#' || ch == '$' || ch == '%' || ch == '^' || ch == '&' || ch == '*')
+    {
+        bFlag = true;
+    }
+
+    return bFlag;
+
+} // End of CheckSpecial
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char ch = '\0';
+    bool bRet = false;
+
+    printf("Enter a character : \n");
+    scanf("%c", &ch);
+
+    bRet = CheckSpecial(ch);
+    if (bRet == true)
+    {
+        printf("Is a symbol\n");
+    }
+    else
+    {
+        printf("Is not a symbol\n");
+    }
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled succesfully by the application
+//
+//  Input   :   4       Output  :   Is not a symbol
+//  Input   :   $       Output  :   Is a symbol
+//
+///////////////////////////////////////////////////////////////////////////////////////

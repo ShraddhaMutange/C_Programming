@@ -1,0 +1,70 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   : ReverseString
+//  Description     : It accepts a string from user and display it in reverse order
+//  Input           : Char
+//  Output          : Void
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 28/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+void ReverseString(char str[])
+{
+    char *start = str;
+    char *end = str;
+    char temp = '\0';
+
+    while(*end != '\0')
+    {
+        end++;
+    }
+
+    end--;
+
+    while (start < end)
+    {
+        temp = *start;
+        *start = *end;
+        *end = temp;
+
+        start++;
+        end--;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[50] = {'\0'};
+
+    printf("Enter the string : \n");
+    scanf("%[^'\n']s", Arr);
+
+    ReverseString(Arr);
+    printf("Reversed string is : %s\n", Arr);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled succesfully by the application
+//
+//  Input   :   Hello WorldX    Output  :   XdlroW olleH
+//  Input   :   Marvellous      Output  :   suollevraM
+//
+///////////////////////////////////////////////////////////////////////////////////////
