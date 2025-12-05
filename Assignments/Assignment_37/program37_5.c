@@ -1,0 +1,73 @@
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name   : strrevX
+//  Description     : It accepts a string from the user and reverse that string in place
+//  Input           : Char[], Char
+//  Output          : Void
+//  Author          : Shraddha Dhananjay Mutange
+//  Date            : 4/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+void strrevX(char str[])
+{
+    char *start = str;
+    char *end = str;
+    char temp = '\0';
+
+    while (*end != '\0')
+    {
+        end++;
+    }
+
+    end--;
+
+    while (start < end)
+    {
+        temp = *start;
+        *start = *end;
+        *end = temp;
+
+        start++;
+        end--;
+    }
+
+} // End of strrevX
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[50] = {'\0'};
+    char cValue = '\0';
+
+    printf("Enter a string : \n");
+    scanf("%[^'\n']s", Arr);
+
+    strrevX(Arr);
+
+    printf("Reversed string : %s\n", Arr);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled succesfully by the application
+//
+//  Input   :  shraddha         Output  :   ahddarhs
+//  Input   :  marvellous       Output  :   suollevram
+//
+///////////////////////////////////////////////////////////////////////////////////////

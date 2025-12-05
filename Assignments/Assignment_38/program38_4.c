@@ -1,0 +1,81 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Required header files
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name : StrCpySmall
+//  Description :   It converts the upper case to lower case in string 
+//  Input :         char *, char *
+//  Output :        void
+//  Author :        Shraddha Dhananjay Mutange
+//  Date :          4/12/2025
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+void StrCpySmall(char *src, char *dest)
+{
+    while(*src != '\0')
+    {
+        if((*src >= 'A') && (*src <= 'Z'))
+        {
+           *dest = *src + 32; 
+        }
+        else
+        {
+            *dest = *src;
+        }
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+}   // End of StrCpySmall
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Entry point function for the application
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char Arr[20] = {'\0'};
+    char Brr[20] = {'\0'};
+
+    printf("Enter string:\n");
+    scanf("%[^'\n']s",Arr);
+
+    StrCpySmall(Arr,Brr);
+
+    printf("Updated string is: %s\n",Brr);
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Testcases successfully handled by the application
+//
+//  Input:
+//  Enter string:
+//  Marvellous Python 2
+//  Output:
+//  Updated string is: marvellous python 2
+//
+//  Input:
+//  Enter string:
+//  India is my country
+//  Output:
+//  Updated string is: india is my country
+//
+//  Input:
+//  Enter string:
+//  HELLO ALL
+//  Output:
+//  Updated string is: hello all
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////
